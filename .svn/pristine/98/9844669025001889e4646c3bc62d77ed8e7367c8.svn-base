@@ -1,0 +1,14 @@
+/* 
+    Author: John Paul Navaja
+    Date Created: 9/10/21
+    Updated On: 9/10/21
+    Updated By: John Paul Navaja
+    Description: api requests & utils
+*/
+
+// API Requests
+export const request = {
+  post: async function(){
+    
+  }
+}

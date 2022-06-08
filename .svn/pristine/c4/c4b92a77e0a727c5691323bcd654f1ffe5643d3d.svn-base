@@ -1,0 +1,7 @@
+Naming convention
+- Screens: CamelType with capital first letter that match the file name CamelType.js
+- Components: CamelType with capital first letter
+  > Default component should match the file name
+- Constants, objects, and variables that are separated and used globally within the app should be named in lower case.
+  > Sample: colors.js, styles.js (Please refer to the assets folder for colors.js)
+

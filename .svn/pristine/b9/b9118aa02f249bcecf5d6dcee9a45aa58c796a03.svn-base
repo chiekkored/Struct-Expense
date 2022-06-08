@@ -1,0 +1,34 @@
+/* 
+    Author: John Paul Navaja
+    Date Created: 9/10/21
+    Updated On: 9/10/21
+    Updated By: John Paul Navaja
+    Description: Sample guide for navigation (routing)
+*/
+
+import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react';
+import SampleScreen from '../screens/auth/SampleScreen';
+// BEGIN: Global variables 
+// Variables first
+const sampleVariable = 'This is an example';
+
+// Navigator Instances
+const First = createStackNavigator();
+// END
+
+// Default component
+// Parameters: {navigation, route}
+export default function FirstScreens({navigation, route}) {
+  return (
+    <First.Navigator>
+      <First.Screen 
+        name="Okay"
+        component={SampleScreen} // screen
+        options={() => ({
+          title: "Sample screen"
+        })}
+      />
+    </First.Navigator>
+  )
+}

@@ -1,0 +1,306 @@
+
+# **STRUCT - MOBILE**
+
+###### Powered by
+
+[![JG Corporation](https://www.jg-corporation.com/assets/img/JG_logo.png)](https://www.jg-corporation.com/)
+
+  
+
+## Installation
+
+  
+
+There are two tools that you need to develop apps with Expo: a command line app called Expo CLI to initialize and serve your project and a mobile client app called Expo Go to open it on iOS and Android. Any web browser will work for opening the project on the web.
+
+  
+
+> :bulb: You don't need macOS to build an iOS app with Expo, you only need an iOS device to run the Expo Go app. For your development machine, Windows, Linux, and macOS are all supported.
+
+  
+
+### 1. Expo CLI
+
+Expo CLI is a command line app that is the main interface between a developer and Expo tools. Expo CLI also has a web-based GUI that pops up in your web browser when you start your project — you can use the GUI instead of the command line interface if you're not yet comfortable using a terminal or prefer GUIs, both have similar capabilities.
+
+  
+
+#### Requirements
+
+-  [Node.js LTS release](https://nodejs.org/en/)
+
+-  [Git](https://git-scm.com/)
+
+-  [Watchman](https://facebook.github.io/watchman/docs/install#buildinstall) for macOS users
+
+  
+
+> Only Node.js LTS releases (even-numbered) are recommended. As Node.js [officially states](https://nodejs.org/en/about/releases/), "Production applications should only use Active LTS or Maintenance LTS releases."
+
+  
+
+#### Recommended Tools
+
+-  [VSCode Editor](https://code.visualstudio.com/download)
+
+-  [VSCode Expo Extension](https://marketplace.visualstudio.com/items?itemName=byCedric.vscode-expo) for `app.json` debugging and autocomplete.
+
+- Windows users: [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows), Bash via WSL, or the VSCode terminal.
+
+  
+
+#### Installing Expo CLI
+
+$ npm install --global expo-cli
+
+  
+
+Verify that the installation was successful by running `expo whoami`. You're not logged in yet, so you will see "Not logged in". You can create an account by running `expo register` if you like, or if you have one already run `expo login`, but you also don't need an account to get started.
+
+  
+
+### 2. Expo Go app for Android and IOS
+
+  
+
+The fastest way to get up and running is to use the Expo Go app on your iOS or Android device. Expo Go allows you to open up apps that are being served through Expo CLI.
+
+  
+
+- 🤖 [Android Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) - Android Lollipop (5) and greater.
+
+- 🍎 [iOS App Store](https://itunes.com/apps/exponent) - iOS 11 and greater.
+
+  
+
+When the Expo Go app is finished installing, open it up. If you created an account with `expo-cli` then you can sign in here on the "Profile" tab. This will make it easier for you to open projects in the client when you have them open in development — they will appear automatically in the "Projects" tab of the client app.
+
+  
+
+>👉 It's often useful to be able to run your app directly on your computer instead of on a separate physical device. If you would like to set this up, you can learn more about [installing the iOS Simulator (macOS only)](https://docs.expo.dev/workflow/ios-simulator/) and [installing an Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/).
+
+  
+  
+
+## Running the Struct-Mobile app
+
+At this point we should have Expo CLI installed on our development machine and the Expo Go app on an iOS or Android physical device or emulator. If not, go back to the [Installation](#installation) guide before proceeding.
+
+  
+
+### 1. Locate project
+
+$ cd struct-mobile
+
+  
+
+### 2. Install Dependencies
+
+$ npm install
+
+  
+
+### 3. Starting the development server
+
+$ expo start
+
+When you run `expo start` (or `npm start`), Expo CLI starts Metro Bundler, which is an HTTP server that compiles the JavaScript code of our app using [Babel](https://babeljs.io/) and serves it to the Expo app. It also pops up Expo Dev Tools, a graphical interface for Expo CLI.
+
+>👋 You can close the Expo Dev Tools window and disable it from starting in the future by pressing `shift+d` in your terminal running Expo CLI. Start it again at any time by pressing `d` in the terminal running Expo CLI.
+
+  
+
+### 4. Opening the app on your phone
+
+> 👨‍👩‍👧‍👧 You can open the project on multiple devices simultaneously. Go ahead and try it on an iPhone and Android phone at the same time if you have both handy.
+
+- 🍎 On your iPhone or iPad, open the default Apple "Camera" app and scan the QR code you see in the terminal or in Expo Dev Tools.
+
+- 🤖 On your Android device, press "Scan QR Code" on the "Projects" tab of the Expo Go app and scan the QR code you see in the terminal or in Expo Dev Tools.
+
+  
+
+#### *Using a simulator*
+
+If you are using a simulator or emulator, you may find the following Expo CLI keyboard shortcuts to be useful:
+
+  
+
+- Pressing `i` will open in an [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/).
+
+- Pressing `a` will open in an [Android emulator or connected device](https://docs.expo.dev/workflow/android-studio-emulator/).
+
+- Pressing `w` will open in your browser. Expo supports all major browsers.
+
+  
+
+:stop_sign:*END OF SETUP GUIDE*:stop_sign:
+
+  
+
+---
+
+  
+
+## Coding Standards and other Common Coding Practices
+
+  
+ ### **Naming convention**
+* Follow these naming conventions to avoid confusion with using filenames, functions/ class names, and all the variables.
+	* **Filename** = NamingConvention.js
+	* **Function/Class names** = NamingConvention
+	* **Public Variable** = namingConvention
+	* **Private Variable** = _namingConvention
+	*  **StyleSheet Variable** = namingConvention (as much as possible, name it according to its styling purpose)
+
+
+ ### **Other Coding Practices**
+* Other coding practices to take note of:
+	* Tab Space = 4 spaces
+	* Single line commenting = //_Single Line Comment_
+	* Multiple line commenting = /* _Multiple Line Comment_ */
+
+
+ ### **Coding Component.js Files**
+* When coding _Components_, follow the syntax below to avoid unnecessary confusion in the coding structure.
+
+###### _**Code syntax starts here.**_
+```
+// Author:
+// Date Created:
+// Updated On:
+// Updated By:
+// Code Added/Updated: (Code Line) (Mini description of the code)
+
+// Begin: Imports
+import  React  from  'react';
+// End: Imports
+
+// Begin: Global Variables
+// Stylesheet
+const  styles = StyleSheet.create({
+	//Add stylesheet variables here
+})
+
+const  anotherVariable = 'Check';
+// End: Global Variables
+  
+// Begin: Component Function
+// (paramater passed): (small description) - (filename location) [if multiple: one line each parameter]
+export  function  ComponentFunction(props) {
+	// Begin: Initialization - Variables, Hooks declaration
+	const [state, setState] = useState(initialState); // Hooks
+	const  a = 'Constant'; // constants
+	const  sampleObject = {};
+	// End: Initialization
+
+	// Begin: Inner Functions
+	// Author:
+	// Date Created:
+	// Updated by:
+	// Date Updated:
+	// Description:
+	function  InnerFunction(props){
+	}
+	// End: Inner Functions
+
+	// Begin: Return Component
+	return (
+		<div>
+		
+		</div>
+	);
+	// End: Return Component
+}
+// End: Component Function
+  
+// Begin: Other Function
+// (paramater passed): (small description) - (filename location) [if multiple: one line each parameter]
+export  function  OtherFunction(props) {
+	// Begin: Initialization - Variables, Hooks declaration
+	const [state, setState] = useState(initialState); // Hooks
+	const  a = 'Constant'; // constants
+	const  sampleObject = {};
+	// End: Initialization
+
+	// Begin: Inner Functions
+	// Author:
+	// Date Created:
+	// Updated by:
+	// Date Updated:
+	// Description:
+	function  InnerFunction(props){
+	}
+	// End: Functions
+
+	// Begin: Return Component
+	return (
+		<div>
+
+		</div>
+	);
+	// End: Return Component
+}
+// End: Function 2
+
+export  const  sampleConstantObject = {
+	test:  "test"
+};
+```
+###### _**Code syntax ends here.**_
+
+
+ ### **Coding Screens.js Files**
+* When coding _Screens_, follow the syntax below to avoid unnecessary confusion in the coding structure.
+
+###### _**Code syntax starts here.**_
+```
+// Author:
+// Date Created:
+// Updated On:
+// Updated By:
+// Code Added/Updated: (Code Line) (Mini description of the code)
+
+// Begin: Imports
+import  React  from  'react';
+// End: Imports
+
+// Begin: Global Variables
+// Stylesheet
+const  styles = StyleSheet.create({
+	//Add stylesheet variables here
+})
+
+const  anotherVariable = 'Check';
+// End: Global Variables 
+
+// Begin: Default Function (Template)
+// (paramater passed): (small description) - (filename location) [if multiple: one line each parameter]
+export  default  function  DefaultFunction(props) {
+	// Begin: Initialization - Variables, Hooks declaration
+	const [state, setstate] = useState(initialState); // Hooks
+	const  a = 'Constant'; // constants
+	const  sampleObject = {};
+	// End: Initialization
+
+	// Begin: Inner Functions
+	// Author:
+	// Date Created:
+	// Updated by:
+	// Date Updated:
+	// Description:
+	function  InnerFunction(props){  
+	}
+	// End: Functions
+
+	// Begin: Return Component
+	return (
+		<div>
+
+		</div>
+	);
+	// End: Return Component
+}
+// End: Default Function
+```
+###### _**Code syntax ends here.**_

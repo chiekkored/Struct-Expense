@@ -1,0 +1,46 @@
+/* 
+    Author: John Paul Navaja
+    Date Created: 9/10/21
+    Updated On: 9/10/21
+    Updated By: John Paul Navaja
+    Description: This will serve as the main navigation for the app
+*/
+
+// BEGIN: Import dependencies
+import React, { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import FirstScreens from './FirstScreens';
+// END
+
+// BEGIN: Global variables if necessary but rarely
+// Variables first
+const sampleVariable = 'This is an example';
+
+// END
+
+// Default component
+// Parameters: none
+export default function Main() {
+   // BEGIN: Local variable declaration
+   const a = 'A';
+   const [state, setstate] = useState(initialState);
+
+   // END
+
+   // BEGIN: Local methods
+   function sampleMethod(){
+
+   }
+
+   async function sampleAsync(){
+
+   }
+   // END
+
+  
+  return (
+    <NavigationContainer>
+      <FirstScreens />
+    </NavigationContainer> 
+  )
+}

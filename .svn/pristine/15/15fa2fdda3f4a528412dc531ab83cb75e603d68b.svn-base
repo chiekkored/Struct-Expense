@@ -1,0 +1,31 @@
+/* 
+    Author: John Paul Navaja
+    Date Created: 9/10/21
+    Updated On: 9/10/21
+    Updated By: John Paul Navaja
+    Description: Serves as color configuration for the app, returns an object of hex color codes
+*/
+
+// Export an object directly
+export default {
+  white: "#fff",
+  border: "#E2E2E2",
+  text: "#343434",
+  darkBlue: "#5D789B",
+  blue: "#4C81FF",
+  textLight: "#797979",
+  offWhite: "#E0E0E0",
+  iconColor: "#4984D2",
+  black:"#000",
+  btnBlue: "#94C2FF",
+  btnPurple: "#8F00C8",
+  txtPurple: "#3E004B",
+  red: "#FF0000",
+  offPurple: "#FCF6FF",
+  peach: "#FFEAD8",
+  green: "#50DC5B",
+  inputBG: "#F5F5F5",
+  lightPurple: "#DF80FF",
+  orange: "#FF9A3B",
+  yellow: "#E2E200",
+}
